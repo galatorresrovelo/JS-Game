@@ -1,0 +1,75 @@
+body {
+color:#4CAF50;
+font-family:'Turret Road', cursive;
+align-content: center;
+background-color: black;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+h1 {
+font-size: 4rem;
+}
+
+#jugar {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+  }
+
+  #start-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 50%;
+  }
+
+  .introjuego {
+      width: 80vw;
+      left: 10%;
+      height: 60vh;
+      overflow: auto;
+      background: rgba(1, 1, 1, 0.5);
+      color: white;
+      position: relative;
+      padding: 1rem;
+      text-align: left;
+      font-size: 1.5rem;
+  }
+
+  .viewport-header {
+    position: relative;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span {
+    color:#4CAF50;
+    font-size: 2rem;
+
+  }
+
+  .instrucciones{
+    color:#4CAF50;
+    font-size: 2rem;
+  }
