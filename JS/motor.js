@@ -4,7 +4,7 @@ const nuevoPedido = new Nuevopedido (100,100,670,156,'Images/notificacion.jpg',t
 const finDeJuego = new Finalbackground(450,100,300,300,'Images/GameOver.png' );
 const confirmaEntrega = new Nuevopedido (100,100,670,156,'Images/confirmar.jpg',this.value);
 const juegoGanado = new Finalbackground (450,100,450,310,'Images/youwin.png');
-const juegoPausado = new Finalbackground (450,100,300,300,'Images/pausafinal.png')
+const juegoPausado = new Finalbackground (450,100,300,300,'Images/pausafinal.png');
 
 generarObstaculos = () => {
    const obstaculos1 = new Obstacles (30,37,Math.floor(Math.random()*((1340-670)+240)),430, 'Images/gatofinal.png');
@@ -91,7 +91,7 @@ actualizacionJuego = () =>{
 terminarJuego = () => {
     requestId = undefined;
     finDeJuego.dibujar();
-}
+    }
 
 ganarJuego =() => {
   pausado = true;
@@ -120,6 +120,9 @@ pausarJuego = () =>{
 // Botón de iniciar juego
 window.onload = () => {
     document.getElementById('start-button').onclick = () => {
+    if(deliveryMan.energy<0 || deliveryMan.tips>0){
+        location.reload();
+    }
     aceptarNuevoPedido();
     };
   }
